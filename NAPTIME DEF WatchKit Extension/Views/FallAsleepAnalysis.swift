@@ -2,8 +2,8 @@
 //  FallAsleepAnalysis.swift
 //  NAPTIME DEF WatchKit Extension
 //
-//  Created by Delia Cavalli on 23/01/2020.
-//  Copyright © 2020 Delia Cavalli. All rights reserved.
+//  Created by Delia Cavalli & Denys Pashkov on 23/01/2020.
+//  Copyright © 2020 Delia Cavalli & Denys Pashkov. All rights reserved.
 //
 
 import SwiftUI
@@ -29,6 +29,7 @@ struct FallAsleepAnalysis: View {
 			
 			Spacer()
 			
+//			Circles and the animations
 			ZStack {
 				
 				Image("CIRCLE SINE CURVE DEFINITIVO")
@@ -53,7 +54,7 @@ struct FallAsleepAnalysis: View {
 					.rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
 			}
 			.onAppear {
-				
+//				make them repeat forever
 				let animation = Animation.linear(duration: 5)
 				withAnimation(animation.repeatForever(autoreverses: true)) {
 					self.isCenter = false
@@ -64,6 +65,7 @@ struct FallAsleepAnalysis: View {
 				}
 			}
 			
+//			NavigationLink in case of person get asleep ( based on heart rate medium when that person is sleeping got form HK Datas )
 			NavigationLink(destination: SleepTimer(napTime: napTime), isActive: self.$isAsleep) {
 				Text("Just relax \(String(self.healthCare.heartRateData ?? 0))").onReceive(timer) { (_) in
 					print("Check health Rate")

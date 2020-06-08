@@ -14,12 +14,19 @@ struct ContentView: View {
 	var body: some View {
 		
 		List{
+			
+//			NavigationLink for the 20 min Nap
+			
 			NavigationLink(destination: FallAsleepAnalysis(napTime: 19)) {
 				
+//				Image and Text in the card
+				
 				ZStack{
+					
+//					Image
 					Image("Apple_Watch_40mm_Copy_5")
 						.resizable()
-						
+//					Text
 					HStack{
 						VStack{
 							HStack{
@@ -49,14 +56,18 @@ struct ContentView: View {
 				
 				
 			}.frame(width: WKInterfaceDevice.current().screenBounds.size.width - 10, height: WKInterfaceDevice.current().screenBounds.size.width - 60)
+//				For have a clear background for each row
 				.listRowPlatterColor(.clear)
 			
+//			NavigationLink for the 90 min Nap
 			NavigationLink(destination: FallAsleepAnalysis(napTime: 89)) {
 				
+//				Card
 				ZStack{
+//					image
 					Image("Apple_Watch_40mm_Copy_9")
 						.resizable()
-						
+//						Text
 					HStack{
 						VStack{
 							HStack{

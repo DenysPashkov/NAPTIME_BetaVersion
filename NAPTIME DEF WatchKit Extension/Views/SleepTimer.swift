@@ -2,13 +2,15 @@
 //  SleepTimer.swift
 //  NAPTIME DEF WatchKit Extension
 //
-//  Created by Delia Cavalli on 23/01/2020.
-//  Copyright © 2020 Delia Cavalli. All rights reserved.
+//  Created by Denys Pashkov on 23/01/2020.
+//  Copyright © 2020 Denys Pashkov. All rights reserved.
 //
 
 import SwiftUI
 
 struct SleepTimer: View {
+	
+//	MARK: Basically this is a big timer that count down and when reach 0 start the wake up 
 	
 	@State var timerOver = false
     

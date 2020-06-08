@@ -11,7 +11,7 @@ import AVFoundation
 
 var audioPlayer: AVAudioPlayer?
 
-
+//For play the sound
 func playSound(sound: String, type: String){
     if let path = Bundle.main.path(forResource: sound, ofType: type){
         do{

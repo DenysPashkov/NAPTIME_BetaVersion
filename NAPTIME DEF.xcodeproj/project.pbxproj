@@ -24,7 +24,6 @@
 		E00554D823DA4D3A009E734A /* HeartBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00554D723DA4D3A009E734A /* HeartBeat.swift */; };
 		E00554DA23DA52BC009E734A /* HKSleepBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00554D923DA52BC009E734A /* HKSleepBeat.swift */; };
 		E00554DE23DADF0B009E734A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00554DD23DADF0B009E734A /* HealthKit.framework */; };
-		E025644423E47F950040844E /* HepticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E025644323E47F950040844E /* HepticFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +90,6 @@
 		E00554D923DA52BC009E734A /* HKSleepBeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKSleepBeat.swift; sourceTree = "<group>"; };
 		E00554DB23DADF0B009E734A /* NAPTIME DEF WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NAPTIME DEF WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		E00554DD23DADF0B009E734A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		E025644323E47F950040844E /* HepticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HepticFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 				4EED11E523D9BD3300802A51 /* Preview Content */,
 				E00554D723DA4D3A009E734A /* HeartBeat.swift */,
 				E00554D923DA52BC009E734A /* HKSleepBeat.swift */,
-				E025644323E47F950040844E /* HepticFeedback.swift */,
 			);
 			path = "NAPTIME DEF WatchKit Extension";
 			sourceTree = "<group>";
@@ -312,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EED11F723D9BD7400802A51 /* FallAsleepAnalysis.swift in Sources */,
-				E025644423E47F950040844E /* HepticFeedback.swift in Sources */,
 				4EED11E023D9BD3300802A51 /* HostingController.swift in Sources */,
 				E00554D823DA4D3A009E734A /* HeartBeat.swift in Sources */,
 				84A6AC8C24532CD800C53B6D /* pa.swift in Sources */,
